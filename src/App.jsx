@@ -1,9 +1,10 @@
 
-import { Container } from 'react-bootstrap'
 import Fomulario from './components/Fomulario'
+import ListadoBebidas from './components/ListadoBebidas'
+import ModalBebida from './components/ModalBebida'
+import { Container } from 'react-bootstrap'
 import { CategoriasProvider } from './context/CategoriasProvider'
 import { BebidasProvider } from './context/BebidasProvider'
-import ListadoBebidas from './components/ListadoBebidas'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
             <Fomulario />
 
             <ListadoBebidas />
+
+            <ModalBebida />
           </Container>
         </BebidasProvider>
       </CategoriasProvider>
